@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+
+
+body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-size: 20px; 
+      background-image: url('pexels-karolina-grabowska-4033636.jpg') 
+    
+      
+      
+    }
+    
+    .box {
+      background-color: 
+#a8a9a7 ;
+      border: 1px solid black;
+      padding: 20px;
+      height:80vh;
+      width:80vh;
+    }
+
+    .element {
+      margin-bottom: 20px; 
+      text-align: center;
+      font-size: large;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .element2{
+      margin-bottom: 20px; 
+      text-align: center;
+      font-size: large;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #textInput {
+      width: calc(100% - 40px); 
+      height: 200px; 
+      resize: vertical; 
+      font-size: 16px;
+      
+    }
+  </style>
+</head>
+
+<body >
+    
+  <div class="box">
+    <div class="element">
+      <h1>Upload Your Recipe</h1>
+    </div>
+    <div class="element2">
+      <form id="recipeForm" enctype="multipart/form-data">
+        <input type="file" id="imageInput" name="image" accept="image/*" >
+      </form>
+    </div>
+    <div class="element2">
+      <textarea id="textInput" placeholder="Enter your recipe here" maxlength="1000"></textarea>
+    </div>
+    <div class="element2">
+      <input type="text" id="linkInput" placeholder="Attach a link">
+    </div>
+    <div class="element2">
+      <button type="button">Upload</button>
+    </div>
+  </div>
+
+
+</body>
+</html>
